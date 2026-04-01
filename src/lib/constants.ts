@@ -1,4 +1,20 @@
-export const footerLinks = [
+// HEADER
+export const NAV_LINKS = [
+  { key: "home", ar: "الرئيسية", en: "Home", active: true },
+  { key: "about", ar: "نبذة عنا", en: "About Us" },
+  { key: "works", ar: "أعمالنا", en: "Our Works" },
+  { key: "services", ar: "خدماتنا", en: "Services" },
+  { key: "contact", ar: "تواصل معنا", en: "Contact Us" },
+];
+
+export const LANGUAGES = [
+  { code: "ar", label: "AR", flag: "/assets/icons/saudi-arabia.png" },
+  { code: "en", label: "EN", flag: "/assets/icons/usa.png" },
+];
+
+// FOOTER
+
+export const FOOTER_LINKS = [
   {
     mainTitle: { ar: "روابط سريعة", en: "Quick Links" },
     links: [
@@ -36,7 +52,7 @@ export const footerLinks = [
   },
 ];
 
-export const paymentWays = [
+export const PAYMENT_WAYS = [
   { image: "/assets/icons/payment1.svg" },
   { image: "/assets/icons/payment2.svg" },
   { image: "/assets/icons/payment3.svg" },
@@ -47,7 +63,7 @@ export const paymentWays = [
   { image: "/assets/icons/payment8.svg" },
 ];
 
-export const socialMedia = [
+export const SOCIALMEDIA = [
   {
     image: "/assets/icons/facebook.png",
     alt: "facebook page",
@@ -75,7 +91,7 @@ export const socialMedia = [
   },
 ];
 
-export const info = [
+export const INFO = [
   {
     icon: "/assets/icons/headphone.svg",
     title: { ar: "الدعم وخدمة العملاء", en: "Customer Support" },
@@ -93,7 +109,7 @@ export const info = [
   },
 ];
 
-export const footerContent = {
+export const FOOTER_CONTENT = {
   description: {
     ar: "شريكك الموثوق في حلول التقنية والتسويق الرقمي. نقدم خدمات مبتكرة لتطوير أعمالك بكفاءة وسلاسة.",
     en: "Your trusted partner in technology solutions and digital marketing. We offer innovative services to grow your business efficiently.",

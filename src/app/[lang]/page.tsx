@@ -1,12 +1,15 @@
-import Header from "@/components/common/header/Header";
+import Hero from "@/components/sections/home/Hero";
+import { redirect } from "next/navigation";
 
-const page = () => {
+const page = async ({ params }: { params: Promise<{ lang: string }> }) => {
+  const lang = (await params).lang;
+  if (lang !== "ar" && lang !== "en") redirect("/ar");
+
   return (
-    <div className="w-full bg-[#182D62]">
-      <div className="container mx-auto px-14 py-10">
-        <Header />
-      </div>
-    </div>
+    <main className="w-full">
+      {/* Hero Section */}
+      <Hero />
+    </main>
   );
 };
 
