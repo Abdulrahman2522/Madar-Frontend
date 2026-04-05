@@ -19,10 +19,10 @@ const LanguageSelector = ({ lang, setLang }: LanguageSelectorProps) => {
     "/assets/icons/saudi-arabia.png";
 
   return (
-    <div className="relative">
+    <div className="relative max-md:hidden">
       <button
         onClick={() => setLangOpen((p) => !p)}
-        className="flex items-center gap-1.5 text-white text-sm bg-transparent hover:bg-white/15 transition px-4 py-3 rounded-full"
+        className="cursor-pointer flex items-center gap-1.5 text-white text-sm bg-transparent hover:bg-white/15 transition px-4 py-3 rounded-full"
       >
         <ChevronDown
           size={14}
@@ -48,7 +48,7 @@ const LanguageSelector = ({ lang, setLang }: LanguageSelectorProps) => {
                   setLangOpen(false);
                   redirect(pathname.replace(/^\/(ar|en)/, `/${l.code}`));
                 }}
-                className={`w-full flex items-center gap-4 px-4 py-2 text-sm transition-colors ${
+                className={`w-full cursor-pointer flex items-center gap-4 px-4 py-2 text-sm transition-colors ${
                   lang === l.code
                     ? "text-[#6a8fff] bg-white/5"
                     : "text-white/70 hover:text-white hover:bg-white/5"
